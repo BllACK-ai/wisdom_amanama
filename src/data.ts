@@ -13,7 +13,7 @@ export const profile = {
   tagline: 'I build rigorous, well-documented models for engineering teams.',
   socials: [
     { label: 'GitHub', href: 'https://github.com/BllACK-ai', icon: GitHub },
-    { label: 'LinkedIn', href: 'www.linkedin.com/in/wisdom-amanama-a6a727241', icon: Linkedin },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/wisdom-amanama-a6a727241', icon: Linkedin },
     { label: 'Email', href: `mailto:${email}`, icon: Mail },
   ] satisfies Social[],
 }
