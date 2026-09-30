@@ -1,22 +1,17 @@
 import { GitHub, Linkedin, Mail, type Icon } from 'react-feather'
+import { email, profile as identity } from './profile'
 
 export type Item = { when: string; title: string; href?: string; body: string; tags?: string[] }
 export type Social = { label: string; href: string; icon: Icon }
 export type Service = { title: string; body: string }
 
-export const email = 'you@example.com'
+export { email, profile } from './profile'
 
-export const profile = {
-  name: 'Wisdom Amanama',
-  email,
-  role: 'Simulation, ML & Vision Engineer',
-  tagline: 'I build rigorous, well-documented models for engineering teams.',
-  socials: [
-    { label: 'GitHub', href: '#', icon: GitHub },
-    { label: 'LinkedIn', href: '#', icon: Linkedin },
-    { label: 'Email', href: `mailto:${email}`, icon: Mail },
-  ] satisfies Social[],
-}
+export const socials = [
+  { label: 'GitHub', href: identity.github, icon: GitHub },
+  { label: 'LinkedIn', href: identity.linkedin, icon: Linkedin },
+  { label: 'Email', href: `mailto:${email}`, icon: Mail },
+] satisfies Social[]
 
 export const about = [
   'ML, computer vision and simulation that survive engineering review.',
