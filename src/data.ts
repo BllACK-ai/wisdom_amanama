@@ -20,7 +20,7 @@ export const profile = {
 
 export const about = [
   'ML, computer vision and simulation that survive engineering review.',
-  'Every model is validated against measurements or real hardware, then documented so it holds up when someone else examines it. MPPT against a built prototype, fault detection against an ODE simulation.',
+  'Every model is validated and documented so it holds up when someone else examines it — MPPT in simulation, fault detection against an ODE model.',
 ]
 
 export const projects: Item[] = [
@@ -33,7 +33,7 @@ export const projects: Item[] = [
   {
     when: 'Machine Learning',
     title: 'Compact solar power station with MPPT',
-    body: 'Modeled and simulated a compact solar power station, including an MPPT algorithm validated against a physical prototype.',
+    body: 'Modeled and simulated a compact solar power station, including an MPPT algorithm validated in simulation.',
     tags: ['MPPT', 'Solar Modeling', 'Simulation'],
   },
   {
@@ -44,14 +44,14 @@ export const projects: Item[] = [
   },
   {
     when: 'Signal Processing',
-    title: 'Vibration monitoring pipeline',
-    body: 'Vibration monitoring built on forward and central difference numerical schemes.',
-    tags: ['Numerical Methods', 'Vibration'],
+    title: 'Vibration monitoring on real sensor data',
+    body: 'FFT-based vibration analysis on a real dataset sampled at 12 kHz, isolating the expected signal and its harmonics with a 0.15 window.',
+    tags: ['Python', 'FFT', 'Vibration'],
   },
   {
     when: 'Signal Processing',
     title: 'FFT-based signal isolation',
-    body: 'Python FFT pipeline for isolating signal frequencies, including a two-frequency case resolved by magnitude thresholding.',
+    body: 'Python FFT pipeline for isolating signal frequencies on synthetic data, including a two-frequency case resolved by magnitude thresholding.',
     tags: ['Python', 'FFT', 'Filtering'],
   },
   {
