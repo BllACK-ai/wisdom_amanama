@@ -43,10 +43,10 @@ export const projects: Item[] = [
     tags: ['Photovoltaics', 'Power Systems', 'Installation'],
   },
   {
-    when: 'Signal Processing',
-    title: 'Vibration monitoring on real sensor data',
-    body: 'FFT-based vibration analysis on a real dataset sampled at 12 kHz, isolating the expected signal and its harmonics with a 0.15 window.',
-    tags: ['Python', 'FFT', 'Vibration'],
+  when: 'Signal Processing',
+  title: 'Vibration monitoring on real sensor data',
+  body: 'FFT-based vibration analysis on a real dataset sampled at 12 kHz, isolating the expected signal and its harmonics.',
+  tags: ['Python', 'FFT', 'Vibration'],
   },
   {
     when: 'Signal Processing',
