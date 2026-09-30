@@ -19,6 +19,10 @@ export default function App() {
           <section id="about">
             <div className="head">About</div>
             {about.map((p, i) => <p key={i}>{p}</p>)}
+            <p className="cta">
+              Have something that needs modeling, validating or building?{' '}
+              <a href={`mailto:${profile.email}`}>Get in touch</a>.
+            </p>
           </section>
           <section id="projects">
             <div className="head">Projects</div>

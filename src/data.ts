@@ -4,21 +4,23 @@ export type Item = { when: string; title: string; href?: string; body: string; t
 export type Social = { label: string; href: string; icon: Icon }
 export type Service = { title: string; body: string }
 
+export const email = 'you@example.com'
+
 export const profile = {
-  name: 'Your Name',
+  name: 'Wisdom Amanama',
+  email,
   role: 'Simulation, ML & Vision Engineer',
-  tagline: 'Machine learning, computer vision and engineering simulation, delivered end to end with the reports and defense materials to match.',
+  tagline: 'I build rigorous, well-documented models for engineering teams.',
   socials: [
     { label: 'GitHub', href: '#', icon: GitHub },
     { label: 'LinkedIn', href: '#', icon: Linkedin },
-    { label: 'Email', href: '#', icon: Mail },
+    { label: 'Email', href: `mailto:${email}`, icon: Mail },
   ] satisfies Social[],
 }
 
 export const about = [
-  'I build machine learning, computer vision and simulation work for engineering and energy clients. Recent work covers fault detection on a three-phase transmission line, solar station modeling with MPPT, and drone-based vision flown for real inspection tasks.',
-  'Most of it starts as a model: a set of differential equations, a frequency spectrum, or a labeled dataset. I build it in Python, validate it against measurements or a prototype, and hand over something that holds up under questioning, which matters when the work still has to stand up in a defense.',
-  'I also teach numerical methods and Python to postgraduate and beginner students, and write and format the academic and technical reports that come with the projects.',
+  'ML, computer vision and simulation that survive engineering review.',
+  'Every model is validated against measurements or real hardware, then documented so it holds up when someone else examines it. MPPT against a built prototype, fault detection against an ODE simulation.',
 ]
 
 export const projects: Item[] = [
@@ -79,16 +81,46 @@ export const projects: Item[] = [
 ]
 
 export const services: Service[] = [
-  { title: 'Final-year and technical projects', body: 'Full builds, reports and defense materials, end to end.' },
-  { title: 'Mathematical modeling and simulation', body: 'Engineering and energy systems modeled, solved and documented.' },
-  { title: 'Machine learning for industrial data', body: 'Fault detection and applied ML on industrial and energy datasets.' },
-  { title: 'Signal and vibration analysis', body: 'FFT-based frequency analysis and filtering of noisy sensor data.' },
-  { title: 'Computer vision projects', body: 'Detection, segmentation and recognition from images and drone video.' },
-  { title: 'Mobile and backend development', body: 'Android, Flutter, FastAPI and MongoDB builds, delivered with a trusted development partner.' },
-  { title: 'Data cleaning and exploratory analysis', body: 'Turning raw sensor and IoT logs into something you can reason about.' },
-  { title: 'Technical and academic report writing', body: 'Writing, editing and formatting, including digitizing scanned documents into Word.' },
-  { title: 'Slide presentations', body: 'Concise decks that carry a technical argument.' },
-  { title: 'Python and numerical methods tutoring', body: 'One-to-one or cohort tutoring for postgraduate and beginner students.' },
+  {
+    title: 'Final-year and technical projects',
+    body: 'Full project builds from problem statement to submission, including the code, the report and the defense materials. I work the scope down early, so it still fits when your supervisor reads it.',
+  },
+  {
+    title: 'Mathematical modeling and simulation',
+    body: 'Engineering and energy systems modeled from first principles and solved numerically, in MATLAB or Python. Includes parameter studies and sensitivity analysis, so you can see where the result stops being trustworthy.',
+  },
+  {
+    title: 'Machine learning for industrial data',
+    body: 'Fault detection and classification on industrial and energy datasets, from sensor time series to labeled failure records. Model choice, validation and error analysis documented, not just a notebook that happens to run.',
+  },
+  {
+    title: 'Signal and vibration analysis',
+    body: 'FFT-based frequency analysis for isolating components in noisy signals, with filtering and spectral density estimation on top. Built on measured data where it exists, synthetic where it does not.',
+  },
+  {
+    title: 'Computer vision projects',
+    body: 'Object detection, segmentation and recognition from stills and drone video. YOLOv8, MediaPipe and OpenCV pipelines, delivered with the training data and the inference code alongside them.',
+  },
+  {
+    title: 'Mobile and backend development',
+    body: 'Android, Flutter, FastAPI and MongoDB builds, delivered with a trusted development partner. Covers the API design, the data modeling, and the app side that has to talk to it.',
+  },
+  {
+    title: 'Data cleaning and exploratory analysis',
+    body: 'Raw sensor and IoT telemetry cleaned into something you can reason about: missing values, outliers, resampling and drift. Analysis that answers a question, rather than a wall of charts.',
+  },
+  {
+    title: 'Technical and academic report writing',
+    body: 'Writing, editing and formatting, including digitizing scanned documents into Word. Structured to a standard you can actually defend, with figures, tables and references handled properly.',
+  },
+  {
+    title: 'Slide presentations',
+    body: 'Concise decks that carry a technical argument instead of summarizing one. Built for a defense or a review, where the slide has to support what you say rather than replace it.',
+  },
+  {
+    title: 'Python and numerical methods tutoring',
+    body: 'One-to-one or cohort tutoring for postgraduate and beginner students, covering numerical differentiation and integration in Python. Sessions come with handouts and worked exercises.',
+  },
 ]
 
 export const teaching: Item[] = [
