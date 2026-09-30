@@ -41,6 +41,12 @@ ul.list:hover .item:not(:hover){opacity:.5}
 .item p{font-size:.875rem;margin:8px 0 0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:16px 0 0}
 .chips li{background:var(--tint);color:var(--accent);border-radius:999px;padding:4px 12px;font-size:.75rem;font-weight:500}
+ul.services{list-style:none;padding:0;margin:0}
+.services li{display:grid;grid-template-columns:18px 1fr;gap:12px;align-items:start;padding:14px 0}
+.services li+li{border-top:1px solid var(--line)}
+.services svg{margin-top:3px;color:var(--accent)}
+.services h3{font-size:.9375rem;font-weight:500}
+.services p{font-size:.875rem;margin:4px 0 0}
 .foot{font-size:.875rem;color:var(--muted);max-width:28rem}
 @media (min-width:640px){.item{grid-template-columns:10rem 1fr}}
 @media (min-width:1024px){
