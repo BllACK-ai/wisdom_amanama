@@ -4,7 +4,7 @@ export type Item = { when: string; title: string; href?: string; body: string; t
 export type Social = { label: string; href: string; icon: Icon }
 export type Service = { title: string; body: string }
 
-export const email = 'you@example.com'
+export const email = 'alazjames@gmail.com'
 
 export const profile = {
   name: 'Wisdom Amanama',
@@ -12,8 +12,8 @@ export const profile = {
   role: 'Simulation, ML & Vision Engineer',
   tagline: 'I build rigorous, well-documented models for engineering teams.',
   socials: [
-    { label: 'GitHub', href: '#', icon: GitHub },
-    { label: 'LinkedIn', href: '#', icon: Linkedin },
+    { label: 'GitHub', href: 'https://github.com/BllACK-ai', icon: GitHub },
+    { label: 'LinkedIn', href: 'www.linkedin.com/in/wisdom-amanama-a6a727241', icon: Linkedin },
     { label: 'Email', href: `mailto:${email}`, icon: Mail },
   ] satisfies Social[],
 }
