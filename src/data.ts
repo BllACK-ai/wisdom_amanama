@@ -1,4 +1,5 @@
 import { GitHub, Linkedin, Mail, type Icon } from 'react-feather'
+import { email, profile as identity } from './profile'
 
 export type Item = { when: string; title: string; href?: string; body: string; tags?: string[] }
 export type Social = { label: string; href: string; icon: Icon }

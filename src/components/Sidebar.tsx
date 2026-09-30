@@ -1,4 +1,4 @@
-import { profile, sections } from '../data'
+import { profile, sections, socials } from '../data'
 
 export default function Sidebar({ active }: { active: string }) {
   return (
@@ -18,7 +18,7 @@ export default function Sidebar({ active }: { active: string }) {
         </nav>
       </div>
       <ul className="social">
-        {profile.socials.map((s) => {
+        {socials.map((s) => {
           const Icon = s.icon
           return (
             <li key={s.label}>
