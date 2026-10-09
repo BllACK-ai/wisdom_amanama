@@ -1,4 +1,5 @@
-import { profile, sections, socials } from '../data'
+import { profile, sections } from '../data'
+const { socials } = profile
 
 export default function Sidebar({ active }: { active: string }) {
   return (
