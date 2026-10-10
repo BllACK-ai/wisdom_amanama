@@ -43,10 +43,11 @@ export const projects: Item[] = [
     tags: ['Photovoltaics', 'Power Systems', 'Installation'],
   },
   {
-  when: 'Signal Processing',
-  title: 'Vibration monitoring on real sensor data',
-  body: 'FFT-based vibration analysis on a real dataset sampled at 12 kHz, isolating the expected signal and its harmonics.',
-  tags: ['Python', 'FFT', 'Vibration'],
+    when: 'Signal Processing',
+    title: 'Bearing vibration analysis on real sensor data',
+    href: 'https://drive.google.com/file/d/14oHIAy5ySpTdVGVxYqzHCVNdfDoVbJz2/view?usp=sharing',
+    body: 'FFT-based analysis of real bearing vibration data (CWRU, 12 kHz): isolated the shaft frequency and its harmonics from a noisy signal, then ran an exploratory healthy-versus-inner-race-fault comparison, reported as inconclusive. Ten-page write-up linked.',
+    tags: ['Python', 'FFT', 'Vibration', 'Bearing Data'],
   },
   {
     when: 'Signal Processing',
