@@ -7,9 +7,9 @@ export type Service = { title: string; body: string }
 export const email = 'alazjames@gmail.com'
 
 export const profile = {
-  name: 'Wisdom Amanama',
+  name: 'Amanama Wisdom James',
   email,
-  role: 'Simulation, ML & Vision Engineer',
+  role: 'Engineer: ML, Modeling & Signal Analysis',
   tagline: 'I build rigorous, well-documented models for engineering teams.',
   socials: [
     { label: 'GitHub', href: 'https://github.com/BllACK-ai', icon: GitHub },
