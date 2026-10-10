@@ -7,7 +7,7 @@ export type Service = { title: string; body: string }
 export const email = 'alazjames@gmail.com'
 
 export const profile = {
-  name: 'Amanama Wisdom James',
+  name: 'Amanama Wisdom',
   email,
   role: 'Engineer: ML, Modeling & Signal Analysis',
   tagline: 'I build rigorous, well-documented models for engineering teams.',
