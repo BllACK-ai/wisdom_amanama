@@ -50,12 +50,6 @@ export const projects: Item[] = [
     tags: ['Python', 'FFT', 'Vibration', 'Bearing Data'],
   },
   {
-    when: 'Signal Processing',
-    title: 'FFT-based signal isolation',
-    body: 'Python FFT pipeline for isolating signal frequencies on synthetic data, including a two-frequency case resolved by magnitude thresholding.',
-    tags: ['Python', 'FFT', 'Filtering'],
-  },
-  {
     when: 'Data Analysis',
     title: 'IoT sensor log cleaning and EDA',
     body: 'Cleaning and exploratory analysis of IoT sensor telemetry logs.',
